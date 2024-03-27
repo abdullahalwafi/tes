@@ -1,0 +1,46 @@
+{
+	"PHP Tag": {
+		"prefix": "php",
+		"body": "<?php $1 ?>"
+	},
+	"Echo": {
+		"prefix": "echo",
+		"body": "<?= $1 ?>"
+	},
+	"Number": {
+		"prefix": "number",
+		"body": "<?= number_format($1, 0, ',', '.');?>"
+	},
+	"Tanggal": {
+		"prefix": "tanggal",
+		"body": "<?= date('d F Y', strtotime($1)); ?>"
+	},
+	"include": {
+		"prefix": "include",
+		"body": "<?php include_once('$1') ?>"
+	},
+	"require": {
+		"prefix": "require",
+		"body": "<?php require_once('$1') ?>"
+	},
+	"isset": {
+		"prefix": "isset",
+		"body": "<?php if (isset($1)) {}?>"
+	},
+	"link": {
+		"prefix": "link",
+		"body": "<?= substr($1, 0 , '50')?>"
+	},
+	"foreach": {
+		"prefix": "foreach",
+		"body": "<?php foreach ($1 as $1key => $1value) {?> \n<option value='<?= $1key ?>'><?= $1value ?></option>\n<?php } ?>"
+	},
+	"alamat": {
+		"prefix": "alamat",
+		"body": "Jln Mohnoh Nur Kp Banyusari RT.001/008 No. 37 DS Leuwimekar KC Leuwiliang Kab Bogor Jawa barat 16640"
+	},
+	"public": {
+		"prefix": "public",
+		"body": "public function $1(){}"
+	}
+}
